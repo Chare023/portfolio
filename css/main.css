@@ -333,6 +333,7 @@ main#home h1 {
 input,
 textarea,
 button {
+  background-color: #fff;
   width: 100%;
   padding: 12px;
   border: 1px solid #fff;
@@ -341,6 +342,13 @@ button {
   margin-top: 6px;
   margin-bottom: 16px;
   font-size: 1rem;
+}
+
+input:active,
+textarea:active,
+input:focus,
+textarea:focus {
+  outline: 1px solid #aaf94a;
 }
 
 textarea {
@@ -397,6 +405,8 @@ textarea {
 }
 
 @media screen and (max-width: 768px) {
+
+
   main {
     align-items: center;
     text-align: center;
@@ -424,17 +434,21 @@ textarea {
 
   .menu-nav {
     transform: translate3d(100%, 0, 0);
+    display: flex;
   }
 
   .nav-link {
-    font-size: 1.5rem !important;
-    padding: 0.5rem !important;
-    overflow: auto;
-    width: auto;
+    font-size: 1.2rem !important;
+    padding: 0.2rem !important;
   }
 
   .menu-branding {
     transform: translate3d(-100%, 0, 0);
+  }
+
+  .portrait {
+    width: 200px !important;
+    height: 200px !important;
   }
 
   .about-info {
@@ -463,11 +477,6 @@ textarea {
   .boxes>div {
     font-size: 1rem;
     padding: 1rem;
-  }
-
-  .portrait {
-    width: 200px !important;
-    height: 200px !important;
   }
 
   .projects {
