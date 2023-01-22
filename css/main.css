@@ -427,8 +427,10 @@ textarea {
   }
 
   .nav-link {
-    font-size: 2rem !important;
+    font-size: 1.5rem !important;
     padding: 0.5rem !important;
+    overflow: auto;
+    width: auto;
   }
 
   .menu-branding {
